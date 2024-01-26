@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon - ./src --exec \"pnpm start\"",
+    "dev": "nodemon --watch ./src --ext \"ts\" --exec \"pnpm start\"",
     "start": "ts-node src/index.ts"
   },
   "keywords": [],
@@ -12,13 +12,16 @@
   "license": "ISC",
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",
-    "@types/node": "18",
+    "@types/node": "^18.19.10",
+    "dotenv": "^16.4.1",
+    "graphql-type-json": "^0.3.2",
     "nodemon": "^3.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
     "@apollo/server": "^4.10.0",
+    "@apperate/iexjs": "^0.10.0",
     "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6"
   }

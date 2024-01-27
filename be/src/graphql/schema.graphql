@@ -1,0 +1,19 @@
+scalar JSON
+
+type Query {
+  hello: String!
+}
+
+type Mutation {
+  quote(symbol: String!): QuoteResult!
+}
+
+type QuoteResult {
+  delayedPrice: Float!
+  previousClose: Float!
+  change: Float!
+  changePercent: Float!
+  companyName: String!
+  peRatio: Float!
+  symbol: String!
+}

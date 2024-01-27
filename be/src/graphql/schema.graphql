@@ -9,11 +9,11 @@ type Mutation {
 }
 
 type QuoteResult {
-  delayedPrice: Float!
+  delayedPrice: Float
   previousClose: Float!
   change: Float!
   changePercent: Float!
   companyName: String!
-  peRatio: Float!
+  peRatio: Float
   symbol: String!
 }

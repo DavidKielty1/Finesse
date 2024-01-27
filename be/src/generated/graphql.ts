@@ -37,8 +37,8 @@ export type QuoteResult = {
   change: Scalars['Float']['output'];
   changePercent: Scalars['Float']['output'];
   companyName: Scalars['String']['output'];
-  delayedPrice: Scalars['Float']['output'];
-  peRatio: Scalars['Float']['output'];
+  delayedPrice?: Maybe<Scalars['Float']['output']>;
+  peRatio?: Maybe<Scalars['Float']['output']>;
   previousClose: Scalars['Float']['output'];
   symbol: Scalars['String']['output'];
 };
@@ -151,8 +151,8 @@ export type QuoteResultResolvers<ContextType = any, ParentType extends Resolvers
   change?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
   changePercent?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
   companyName?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
-  delayedPrice?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
-  peRatio?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
+  delayedPrice?: Resolver<Maybe<ResolversTypes['Float']>, ParentType, ContextType>;
+  peRatio?: Resolver<Maybe<ResolversTypes['Float']>, ParentType, ContextType>;
   previousClose?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
   symbol?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;

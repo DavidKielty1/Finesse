@@ -1,14 +1,21 @@
 {
   "dependencies": {
+    "@apollo/client": "^3.8.10",
+    "@expo/metro-runtime": "~3.1.1",
     "expo": "^50.0.1",
+    "graphql": "^15.8.0",
+    "luxon": "^3.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.2",
+    "react-native-svg": "14.1.0",
     "react-native-web": "~0.19.6",
-    "@expo/metro-runtime": "~3.1.1"
+    "victory": "^36.8.2",
+    "victory-native": "^36.8.2"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
+    "@types/luxon": "^3.4.2",
     "@types/react": "~18.2.14",
     "@types/react-native": "~0.70.6",
     "typescript": "^5.1.3"

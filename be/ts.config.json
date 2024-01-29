@@ -1,10 +1,12 @@
 {
   "extends": "@tsconfig/node18/tsconfig.json",
+  "types": ["node"],
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "ES2018"],
     "outDir": "dist"
   },
-  "include": ["src", "./typings.d.ts"],
+  "include": ["src", "./types.d.ts", "./src/**/*"],
   "exclude": ["node_modules", "**/*.test.ts"],
-  "ts-node": { "files": true }
+  "ts-node": { "files": true },
+  "esModuleInterop": true
 }

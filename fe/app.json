@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "7b747360-38a1-45fb-bdf0-3dbc1aaff287"
+      }
+    },
+    "owner": "davidkielty",
+    "slug": "finesse",
+    "android": {
+      "package": "com.davidkielty.finesse"
+    },
+    "ios": {
+      "bundleIdentifier": "com.davidkielty.finesse"
+    }
+  }
+}
